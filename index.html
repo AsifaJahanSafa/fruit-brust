@@ -10,8 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <header>
-    <div class="navbar lg:bg-[#F85559] lg:rounded-full">
+  <header class="container mx-auto px-8">
+    <div class="navbar lg:bg-[#F85559] lg:rounded-full mb-5">
         <div class="hidden lg:flex text-black opacity-70   navbar-start lg:text-white">
           <ul class="menu menu-horizontal px-1 font-bold">
             <li><a>Home</a></li>
@@ -22,13 +22,15 @@
           </ul>
           
         </div>
-        <div class="navbar-center text-black opacity-70 lg:flex lg:text-white font-extrabold text-2xl lg:opacity-1">
-         <img src="./styles/images/logo.png" alt="">
+        <div class="navbar-center text-black opacity-70 lg:flex flex-row gap-3 lg:text-white font-extrabold text-2xl lg:opacity-1">
+         <div class="w-9">
+          <img src="./styles/images/logo.png" alt="" >
+         </div>
           <h3>Fruit Burst</h3>
         </div>
         <div class="navbar-end">
-          <div class="hidden lg:flex justify-between lg:bg-white lg:px-2 lg:py-3 rounded-full lg:">
-            <input type="text" placeholder="Search Here " c>
+          <div class="hidden lg:flex justify-between lg:bg-white lg:px-2 lg:py-1 rounded-full lg:border-none">
+            <input class="border-none" border-none type="text" placeholder="Search Here" >
             <img src="./styles/images/Frame.svg" alt="">
 
           </div>
@@ -59,8 +61,351 @@
           </div>
         </div>
       </div>
+
+<!-- banner section -->
+      <section class="lg:px-3">
+        <div class="carousel w-full  ">
+          <!-- slide-1 -->
+          <div id="slide1" class="carousel-item relative w-full h-[65vh] bg-center bg-cover bg-[linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url(./styles/images/banner1.png)] rounded-lg">
+            <!-- hot deal -->
+            <div class="absolute top-5 right-5 bg-[#F85559] text-white px-3 py-2 text-base rounded-md">
+              <h6>Hot deal</h6>
+            </div>
+            
+            
+            <div class="text-white flex flex-col justify-center items-center mx-auto text-center space-y-8">
+              <h3 class="text-2xl font-extrabold lg:text-7xl">Exotic tastes at your <br> doorstep</h3>
+              <p class="text-xs font-normal w-2/3 lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eius iusto harum tempora a quibusdam?</p>
+              <button class="btn btn-active bg-[#F85559] text-white border-none">Shop Now</button>
+            </div>
+            <div class="absolute left-5 bottom-0 space-x-5 -translate-y-1/2 transform ">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+
+          <!-- slide-2 -->
+          <div id="slide2" class="carousel-item relative w-full h-[65vh] bg-center bg-cover bg-[linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url(./styles/images/banner2.png)] rounded-lg">
+            <div class="text-white flex flex-col justify-center items-center mx-auto text-center space-y-8">
+              <h3 class="text-2xl font-extrabold lg:text-7xl">Exotic tastes at your <br> doorstep</h3>
+              <p class="text-xs font-normal w-2/3 lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eius iusto harum tempora a quibusdam?</p>
+              <button class="btn btn-active bg-[#F85559] text-white border-none">Shop Now</button>
+            </div>
+            <div class="absolute bottom-0 right-5 space-x-4  -translate-y-1/2 transform ">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+
+          <!-- slide-3 -->
+          <div id="slide3" class="carousel-item relative w-full h-[65vh] bg-center bg-cover bg-[linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url(./styles/images/banner3.png)] rounded-lg">
+            <div class="text-white flex flex-col justify-center items-center mx-auto text-center space-y-8">
+              <h3 class="text-2xl font-extrabold lg:text-7xl">Exotic tastes at your <br> doorstep</h3>
+              <p class="text-xs font-normal w-2/3 lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eius iusto harum tempora a quibusdam?</p>
+              <button class="btn btn-active bg-[#F85559] text-white border-none">Shop Now</button>
+            </div>
+            <div class="absolute left-1/2 right-1/2 top-1/2  flex -translate-y-1/2 transform justify-center items-center space-x-4">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <!-- slide-4 -->
+          <div id="slide4" class="carousel-item relative w-full h-[65vh] bg-center bg-cover bg-[linear-gradient(180deg,rgba(0,0,0,0.8),rgba(0,0,0,0.1)),url(./styles/images/banner4.png)] rounded-lg">
+            <div class="text-white flex flex-col justify-center items-center mx-auto text-center space-y-8">
+              <h3 class="text-2xl font-extrabold lg:text-7xl">Exotic tastes at your <br> doorstep</h3>
+              <p class="text-xs font-normal w-2/3 lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eius iusto harum tempora a quibusdam?</p>
+              <button class="btn btn-active bg-[#F85559] text-white border-none">Shop Now</button>
+            </div>
+            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+<!-- fruit image div -->
+        <div class="bg-white  w-9/12 shadow-lg mx-auto p-2 -translate-y-20 rounded-lg hidden lg:flex justify-around items-center">
+          <div class="flex justify-around items-center">
+            <img src="./styles/images/fruit1.png" alt="">
+          <img src="./styles/images/fruit2.png" alt="">
+          <img src="./styles/images/fruit3.png" alt="">
+          <img src="./styles/images/fruit4.png" alt="">
+          <img src="./styles/images/fruit5.png" alt="">
+          </div>
+        </div>
+      </section>
+
+
+
+     
   </header>
-  <main></main>
+  <main class="container mx-auto px-8">
+    <!-- deal of the day -->
+    <section class="flex flex-col">
+      <div class="flex flex-col  text-center lg:flex-row gap-8 lg:justify-between lg:text-left items-center">
+        <div class="space-y-6">
+          <h3 class="font-extrabold text-2xl">Deal of the day</h3>
+        <p class="text-base font-thin bg-opacity-65 w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veniam voluptatem ea labore architecto, odit debitis neque distinctio quia voluptatum!</p>
+        </div>
+        <div class="">
+          <div class="grid auto-cols-max grid-flow-col gap-5 text-center">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:${counter};"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="mt-7 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div class=" flex flex-col justify-center items-center p-5 space-y-4 border-2	border-slate-200		 rounded-md">
+            <img src="./styles/images/fruit6.png" alt="" srcset="">
+            <h3 class="text-xl font-bold">12.90$ - 18.85$</h3>
+          <hr class="border-1 bg-black w-1/2">
+          <p>Apple</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#f85559]"
+              checked="checked" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+          </div>
+          <button class="btn btn-active bg-[#f85559] text-white"><Details></Details></button>
+
+          </div>
+          <div class=" flex flex-col justify-center items-center p-5 space-y-6 border-2	border-slate-200 rounded-md">
+            <img src="./styles/images/fruit7.png" alt="" srcset="">
+            <h3 class="text-xl font-bold">12.90$ - 18.85$</h3>
+          <hr class="border-1 bg-black w-1/2">
+          <p>Apple</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#f85559]"
+              checked="checked" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+          </div>
+          <button class="btn btn-active bg-[#f85559] text-white"><Details></Details></button>
+
+          </div>
+          <div class=" flex flex-col justify-center items-center p-5 space-y-6 border-2	border-slate-200 rounded-md">
+            <img src="./styles/images/fruit8.png" alt="" srcset="">
+            <h3 class="text-xl font-bold">12.90$ - 18.85$</h3>
+          <hr class="border-1 bg-black w-1/2">
+          <p>Apple</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#f85559]"
+              checked="checked" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+          </div>
+          <button class="btn btn-active bg-[#f85559] text-white"><Details></Details></button>
+
+          </div>
+          <div class=" flex flex-col justify-center items-center p-5 space-y-6 border-1 border-2	border-slate-200 rounded-md">
+            <img src="./styles/images/fruit9.png" alt="" srcset="">
+            <h3 class="text-xl font-bold">12.90$ - 18.85$</h3>
+          <hr class="border-1 bg-black w-1/2">
+          <p>Apple</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input
+              type="radio"
+              name="rating-2"
+              class="mask mask-star-2 bg-[#f85559]"
+              checked="checked" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#f85559]" />
+          </div>
+          <button class="btn btn-active bg-[#f85559] text-white"><Details></Details></button>
+
+          </div>
+        </div>
+      
+        <button class="btn bg-[#f85559] max-w-screen-md mx-auto mt-8 flex justify-center items-center text-white border-none">Show All</button>
+      </section>
+      <!-- meet our team section -->
+       <section class="mt-10 p-8 bg-[linear-gradient(180deg,rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url(./styles/images/banner1.png)] max-w-5xl max-h-fit bg-center bg-cover px-1 rounded-lg flex text-white flex-col justify-center items-center mx-auto text-center space-y-8">
+        <div class="space-y-2">
+          <h3 class="text-3xl lg:text-4xl text-center font-semibold">Meet the team section</h3>
+        <p class="text-base  text-center font-thin opacity-75 w-2/3 mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio minima natus aspernatur aut assumenda tempora consequatur rem est reiciendis necessitatibus.n</p>
+        </div>
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 ">
+          <div class="flex flex-col justify-center items-center space-y-2 ">
+            <img class="w-3/5"src="./styles/images/member1.png" alt="" srcset="">
+          <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+          <p class="text-base font-thin">Fruits Expert</p>
+          <div class="flex flex-row gap-3">
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-twitter"></i></div>
+          </div>
+        </div>
+        <!-- member-2 -->
+          <div class="flex flex-col justify-center items-center space-y-2">
+            <img class="w-3/5"src="./styles/images/member2.png" alt="" srcset="">
+          <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+          <p class="text-base font-thin">Fruits Expert</p>
+          <div class="flex flex-row gap-3">
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-twitter"></i></div>
+          </div>
+        </div>
+
+        <!-- member-3 -->
+          <div class="flex flex-col justify-center items-center space-y-2">
+            <img class="w-3/5"src="./styles/images/member3.png" alt="" srcset="">
+          <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+          <p class="text-base font-thin">Fruits Expert</p>
+          <div class="flex flex-row gap-3">
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-twitter"></i></div>
+          </div>
+        </div>
+        <!-- member-4 -->
+          <div class="flex flex-col justify-center items-center space-y-2">
+            <img class="w-3/5"src="./styles/images/member4.png" alt="" srcset="">
+          <h3 class="text-2xl font-bold">Awlad Hossain</h3>
+          <p class="text-base font-thin">Fruits Expert</p>
+          <div class="flex flex-row gap-3">
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="w-8 h-8 rounded-full bg-[#f85559] text-white flex justify-center items-center"><i class="fa-brands fa-twitter"></i></div>
+          </div>
+        </div>
+        </div>
+       </section>
+
+       <!-- Why choose us -->
+        <section class="mt-10">
+          <div class="space-y-2">
+            <h3 class=" text-3xl lg:text-4xl font-semibold text-center">Why Choose Us</h3>
+          <p class="text-base font-thin opacity-75 w-2/3 mx-auto text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio minima natus aspernatur aut assumenda tempora consequatur rem est reiciendis necessitatibus.n</p>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 mt-8 lg:grid-cols-3">
+            <!-- grid-1 -->
+             <div class="flex flex-col space-y-1">
+            <!-- /flex-item-1 -->
+              <div class="flex flex-col justify-center items-center text-center lg:text-left lg:flex-row gap-6 space-y-2">
+                <div class="w-12 h-12 rounded-full flex justify-center items-center bg-slate-300 ">
+                  <img src="./styles/images/group 1 (1).svg" alt="">
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-l font-bold ">Dedicated Team</h3>
+                  <div class="divider  mb-1 mt-1"></div>
+                  <p class="text-xs font-thin opacity-70">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+                <!-- /flex-item-2 -->
+              <div class="flex flex-col justify-center items-center text-center lg:text-left lg:flex-row gap-6 space-y-2">
+                <div class="w-12 h-12 rounded-full flex justify-center items-center bg-slate-300 ">
+                  <img src="./styles/images/love 1.svg " alt="">
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-l font-bold">Fresh is Best</h3>
+                  <div class="divider  mb-1 mt-1"></div>
+                  <p class="text-xs font-thin opacity-70">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+                <!-- /flex-item-3 -->
+              <div class="flex flex-col justify-center items-center text-center lg:text-left lg:flex-row gap-6 space-y-2">
+                <div class="w-12 h-12 rounded-full flex justify-center items-center bg-slate-300 ">
+                  <img src="./styles/images/gift-box 1.svg" alt="">
+                </div>
+                <div class="flex-1 ">
+                  <h3 class="text-l font-bold">Dedicated Team</h3>
+                  <div class="divider  mb-1 mt-1 flex  items-center"></div>
+                  <p class="text-xs font-thin opacity-70">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+           
+             <!-- grid-2 -->
+              <div class="mx-auto">
+                <img src="./styles/images/whychoose1.png" alt="" srcset="">
+              </div>
+            
+           <!-- grid-3 -->
+         
+           <div class="flex flex-col space-y-1 ">
+            <!-- /flex-item-1 -->
+              <div class="flex flex-col justify-center items-center text-center lg:text-right lg:flex-row gap-6 space-y-2">
+                
+                <div class="flex-1">
+                  <h3 class="text-l font-bold ">Integrated Supplier</h3>
+                  <div class="divider  mb-1 mt-1"></div>
+                  <p class="text-xs font-thin opacity-70">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+                <div class="w-12 h-12 rounded-full flex justify-center items-center bg-slate-300 ">
+                  <img src="./styles/images/fruit 1.svg" alt="">
+                </div>
+              </div>
+                <!-- /flex-item-2 -->
+                <div class="flex flex-col justify-center items-center text-center lg:text-right lg:flex-row gap-6 space-y-2">
+                
+                  <div class="flex-1">
+                    <h3 class="text-l font-bold ">Sustainable Practice</h3>
+                    <div class="divider  mb-1 mt-1"></div>
+                    <p class="text-xs font-thin opacity-70">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  </div>
+                  <div class="w-12 h-12 rounded-full flex justify-center items-center bg-slate-300 ">
+                    <img src="./styles/images/ice-cream 1.svg" alt="">
+                  </div>
+                </div>
+                <!-- /flex-item-3 -->
+                <div class="flex flex-col justify-center items-center text-center lg:text-right lg:flex-row gap-6 space-y-2">
+                
+                  <div class="flex-1">
+                    <h3 class="text-l font-bold ">The Benefits Only</h3>
+                    <div class="divider  mb-1 mt-1"></div>
+                    <p class="text-xs font-thin opacity-70">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  </div>
+                  <div class="w-12 h-12 rounded-full flex justify-center items-center bg-slate-300 ">
+                    <img src="./styles/images/like 1.svg " alt="">
+                  </div>
+                </div>
+            </div>
+          
+        </section>
+  </main>
   <footer></footer>
     
 </body>
